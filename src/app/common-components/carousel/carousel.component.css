@@ -1,0 +1,67 @@
+/* Carousel indicators */
+.carousel-indicators li {
+    background-color: #000;
+    border: none;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+/* Carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Carousel images */
+.carousel-inner img {
+    height: 360px; /* Adjusted height */
+    object-fit: cover; /* Ensure the images cover the entire container */
+}
+
+/* Carousel caption */
+.carousel-caption {
+    text-align: center;
+    color: #fff; /* Text color */
+    position: absolute;
+    bottom: 20px; /* Adjust the vertical position */
+    left: 0;
+    right: 0;
+}
+
+.carousel-caption h3 {
+    font-size: 20px; /* Font size for the lines of text */
+    margin: 5px 0; /* Margin between lines of text */
+    font-family: Arial, sans-serif; /* Font family */
+    font-weight: bold; /* Bold font for better visibility */
+}
+
+.line1 {
+    font-style: italic; /* Italics for line 1 */
+}
+
+.line2 {
+    color: #f39c12; /* Different color for line 2 */
+}
+
+.line3 {
+    text-transform: uppercase; /* Uppercase for line 3 */
+}
+
+/* Carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust the width as needed */
+}
+
+/* Custom styles for carousel container */
+.carousel {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+/* Center the carousel indicators */
+.carousel-indicators {
+    bottom: -30px; /* Adjust the position as needed */
+}

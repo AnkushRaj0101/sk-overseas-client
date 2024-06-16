@@ -1,8 +1,10 @@
-.about_container{
-    background-color: #ffffff!important;
-    height: 130vh;
-
+.about_container {
+    background-color: #ffffff !important;
+    min-height: 100vh; /* Ensure container takes at least the full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding: 20px; /* Add padding to prevent content from sticking to edges */
 }
+
 .about_image {
     background-image: url('/assets/images/LINES-ABOUT2A.jpg');
     height: 20vh;
@@ -15,11 +17,8 @@
 .about_image img {
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover; /* Ensure image covers the container */
 }
-
 
 .title {
     text-align: center;
@@ -27,53 +26,39 @@
     font-weight: 500;
     font-style: italic;
     font-size: 25px;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
 .breadcrumbs {
     text-align: center;
-    text-decoration: none;
-
+    margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
 .breadcrumbs li {
     display: inline-block;
     padding: 10px;
-
-}
-
-.icon svg{
-    height: 16px;
-
 }
 
 .breadcrumbs li a {
-    text-align: center;
     text-decoration: none;
     color: black;
+}
 
+.icon svg {
+    height: 16px;
 }
 
 #Content {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     opacity: 1;
-    /* color: white; */
     width: 100%;
     padding-top: 30px;
 }
-img.logo{
-    border: 0;
-    margin-top: -15%;
-    margin-left: 10%;
-    width: 80vh;
-    height: 50vh;
-}@media (max-width: 768px) {
-    .about_container {
-        height: auto; /* Adjust height to auto for smaller screens */
-        min-height: 100vh; /* Ensure full viewport height */
-    }
 
+img.logo {
+    margin-left: 32%;
+}
+
+@media (max-width: 768px) {
     .about_image {
         height: 40vh; /* Adjust height for smaller screens */
     }
