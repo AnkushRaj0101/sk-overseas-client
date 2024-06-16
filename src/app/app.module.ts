@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './user-components/home/home.component';
+import { AboutComponent } from './user-components/about/about.component';
+import { ContactComponent } from './user-components/contact/contact.component';
+import { VisaComponent } from './user-components/visa/visa.component';
+import { NavbarComponent } from './common-components/navbar/navbar.component';
+import { FooterComponent } from './common-components/footer/footer.component';
+import { TopHeaderComponent } from './common-components/top-header/top-header.component';
+import { CarouselComponent } from './common-components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    ContactComponent,
+    VisaComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    TopHeaderComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
