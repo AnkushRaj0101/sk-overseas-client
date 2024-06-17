@@ -72,7 +72,7 @@
 .countries-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust the gap between columns */
+    gap: 30px; /* Adjust the gap between columns */
 }
 
 .list_of_countries {
@@ -125,6 +125,16 @@
 .list_of_work_visa_countries li i {
     margin-right: 5px;
 }
+
+img {
+    /* Styles for the image */
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 .textwidget ul {
