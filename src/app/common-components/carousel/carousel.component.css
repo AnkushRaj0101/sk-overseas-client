@@ -17,25 +17,27 @@
 
 /* Carousel images */
 .carousel-inner img {
-    height: 360px; /* Adjusted height */
+    height: 500px; /* Adjusted height */
     object-fit: cover; /* Ensure the images cover the entire container */
 }
 
 /* Carousel caption */
 .carousel-caption {
     text-align: center;
-    color: #fff; /* Text color */
+    color: #070000; /* Text color */
     position: absolute;
-    bottom: 20px; /* Adjust the vertical position */
+    bottom: 5px; /* Adjust the vertical position */
     left: 0;
     right: 0;
+    animation: slideInUp 1s ease; /* Slide-in animation */
 }
 
 .carousel-caption h3 {
-    font-size: 20px; /* Font size for the lines of text */
-    margin: 5px 0; /* Margin between lines of text */
+    font-size: 24px; /* Font size for the lines of text */
+    margin: 10px 0; /* Margin between lines of text */
     font-family: Arial, sans-serif; /* Font family */
     font-weight: bold; /* Bold font for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for better contrast */
 }
 
 .line1 {
@@ -54,7 +56,12 @@
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%; /* Adjust the width as needed */
+ 
+    border-radius: 50%; /* Rounded corners for the buttons */
+    padding: 10px; /* Padding around the icons */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
+
 
 /* Custom styles for carousel container */
 .carousel {
@@ -64,4 +71,30 @@
 /* Center the carousel indicators */
 .carousel-indicators {
     bottom: -30px; /* Adjust the position as needed */
+}
+
+/* Animation keyframes */
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Additional styles for animation */
+@keyframes slideInText {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.carousel-caption .animated-text {
+    animation: slideInText 1s ease forwards;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    position: relative; /* Ensure positioning context */
 }
